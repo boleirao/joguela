@@ -2,7 +2,8 @@
         <div class="center-align">
         
             <div class="box-facebook left">
-               <strong>CADASTRE JÁ SUA QUADRA, GINÁSIO OU CAMPO NO JOGUE LÁ E VEJA SEU NEGÓCIO FAZER UMA BELA DUPLA COM O SUCESSO!</strong>
+               <strong>CADASTRE JÁ SUA QUADRA, GINÁSIO OU CAMPO NO JOGUE LÁ E VEJA SEU NEGÓCIO FAZER UMA BELA DUPLA COM O SUCESSO!</strong><br /><br />
+               <div class="fb-page" data-href="https://www.facebook.com/pages/Jogue-L%C3%A1/1468542276694015?ref=hl" data-width="500" data-height="250" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Jogue-L%C3%A1/1468542276694015?ref=hl"><a href="https://www.facebook.com/pages/Jogue-L%C3%A1/1468542276694015?ref=hl">Jogue Lá</a></blockquote></div></div>
             </div>
                         
             <div class="box-joguela right">

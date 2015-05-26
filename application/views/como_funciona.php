@@ -25,36 +25,6 @@
 
 
 
-<div id="blog">
-    <div class="center-align">
+<?php $this->load->view('template/ultimas_blog');?>
 
-        <h2>ÚLTIMAS DO BLOG</h2>
-
-        <div class="ultimas-blog left">
-            <h3><a href="">Líderes de mercado, Adidas e Nike inovam e lançam chuteiras 'cano alto' para a Copa</a></h3>
-            <p><a href="">As duas principais marcas de artigos esportivos ao redor do mundo lançaram...</a></p>
-            <p><a href="" class="button-small btgreen2">Leia na Íntegra</a></p>
-        </div>
-
-        <div class="ultimas-blog center">
-            <h3><a href="">Líderes de mercado, Adidas e Nike inovam e lançam chuteiras 'cano alto' para a Copa</a></h3>
-            <p><a href="">As duas principais marcas de artigos esportivos ao redor do mundo lançaram...</a></p>
-            <p><a href="" class="button-small btgreen2">Leia na Íntegra</a></p>
-        </div>
-
-        <div class="ultimas-blog right">
-            <h3><a href="">Líderes de mercado, Adidas e Nike inovam e lançam chuteiras 'cano alto' para a Copa</a></h3>
-            <p><a href="">As duas principais marcas de artigos esportivos ao redor do mundo lançaram...</a></p>
-            <p><a href="" class="button-small btgreen2">Leia na Íntegra</a></p>
-        </div>
-    </div>
-</div>
-
-<div id="publicidade">
-    <div class="center-align">
-        <h2>PUBLICIDADE</h2>
-        <div class="publicidade left"><a href=""><img src="<?php print base_url(); ?>assets/images/banner.jpg" alt="Banner"></a></div>
-        <div class="publicidade center"><a href=""><img src="<?php print base_url(); ?>assets/images/banner.jpg" alt="Banner"></a></div>
-        <div class="publicidade right"><a href=""><img src="<?php print base_url(); ?>assets/images/banner.jpg" alt="Banner"></a></div>
-    </div>
-</div>
+<?php $this->load->view('template/publicidade');?>

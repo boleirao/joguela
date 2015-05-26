@@ -51,5 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'home';
 $route['como-funciona'] = 'funciona';
+$route['quadras-society'] = 'quadras';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
