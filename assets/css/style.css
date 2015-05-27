@@ -476,6 +476,8 @@ input{
 	width:31.66%;
 	height: auto;
 	float:left;
+        margin-left: 1%;
+        margin-top: 1%;
 	}
 
 .destaques img:hover{
@@ -541,6 +543,8 @@ input{
 	padding-bottom: 10px;
 	background: url(../images/campo.png) no-repeat right center rgb(255,255,255);
 	border: 1px solid #ccc; 
+        margin-left: 1%;
+        margin-top: 1%;
 	}
 
 .destaques-title-2{
