@@ -85,6 +85,20 @@ class Model_unidades extends CI_Model {
 
         return $query->result_array();
     }
+    
+    function busca($chave = '', $destaque = 0) {
+        $this->db->from('unidades');
+        $this->db->join('cidade','unidades.cidadeID = cidade.id');
+        
+        if(isset($chave)){
+            $this->db->like('unidade', $chave);
+            $this->db->or_like('nome', $chave);
+        }
+        
+        $query = $this->db->get();
+
+        return $query->result_array();
+    }
 
     function item($unidadeID = 0) {
         $this->db->from('unidades');

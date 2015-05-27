@@ -14,6 +14,8 @@ class home extends CI_Controller {
         
         $data['destaques'] = $this->Model_unidades->lista(array('destaque' => 1), array(), 6);
         
+        $data['quadras'] = $this->Model_unidades->lista(array('destaque' => 0), array(), 12);
+        
         $this->load->view('template/default', $data);
     }
 

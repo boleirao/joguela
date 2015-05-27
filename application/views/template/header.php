@@ -34,7 +34,7 @@
                  <ul>
                     <li><a href="<?php print base_url(); ?>home">Home</a></li>
                     <li><a href="<?php print base_url(); ?>como-funciona">Como Funciona</a></li>
-                    <li><a href="">Cadastre seu Local</a></li>
+                    <li><a href="<?php print base_url(); ?>cadastre-seu-local">Cadastre seu Local</a></li>
                     <li><a href="<?php print base_url(); ?>blog">Blog</a></li>
                 </ul>
             </nav>
@@ -42,23 +42,22 @@
                         
         <div class="center-align">
 			<div id="logo">
-            	<h1><a href="home"><img src="<?php print base_url(); ?>assets/images/logo-final-branco.png" alt="Jogue Lá"></a></h1>
+            	<h1><a href="<?php print base_url(); ?>home"><img src="<?php print base_url(); ?>assets/images/logo-final-branco.png" alt="Jogue Lá"></a></h1>
             </div>
         </div>
     	<div id="topo-chamada">
         	<div class="chamada-home"><h1>Encontrar o local e agendar seu futebol nunca foi tão fácil!</h1></div>
             <div id="top-search">
             	<div class="filtro">       
-                    <div class="campo-1">
-                        <form method="" action="">
-                            <input name="" type="text" placeholder="Encontre o local ideal por CIDADE ou NOME" required>
-                        </form>
-                    </div>
+                    <form method="POST" action="<?php print base_url(); ?>quadras/busca">
+                        <div class="campo-1">
+                            <input name="chave" type="text" placeholder="Encontre o local ideal por CIDADE ou NOME" required>
+                        </div>
 
-                    <div class="campo-3">
-                    <button class="button btgreen">ENCONTRAR</button>
-                    </div>
-                    
+                        <div class="campo-3">
+                            <button type="submit" class="button btgreen">ENCONTRAR</button>
+                        </div>
+                    </form>
                 </div>
                 </div>
             </div>

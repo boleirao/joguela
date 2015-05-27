@@ -17,9 +17,11 @@ class blog extends CI_Controller {
        $this->load->view('template/default', $data);
     }
     
-    public function post() {
+    public function post($url = '', $blogID = 0) {
         $data['title'] = "Jogue Lá - Encontrar o local e agendar seu futebol nunca foi tão fácil!";
         $data['main_content'] = "post";
+        
+        $data['post'] = $this->Model_blog->item($blogID);
         
         $this->load->view('template/default', $data);
     }
