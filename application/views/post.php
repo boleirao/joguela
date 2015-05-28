@@ -11,6 +11,7 @@
         <p><?php print $post['texto']; ?></p>
 
         <h3>FONTE: <?php print $post['fonte']; ?></h3>
+        <div class="fb-comments" data-href="<?php print base_url(); ?>blog/post/<?php print $this->utils->url_amigavel($post['titulo']); ?>/<?php print $post['blogID']; ?>" data-numposts="5" data-colorscheme="light"></div>
     </div>
 
     <div id="right-column-blog">

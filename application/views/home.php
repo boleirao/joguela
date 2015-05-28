@@ -74,7 +74,7 @@
         </div>
     <div class="center-align">
     	<div style="text-align:center">
-            <button onclick="javascript: location.href = '<?php print base_url(); ?>quadras-society';" class="button btgreen">VEJA AQUI TODAS AS QUADRAS CADASTRADAS</button>
+            <button onclick="javascript: location.href = '<?php print base_url(); ?>quadras-society';" class="button btgreen">VEJA AQUI TODAS AS QUADRAS SOCIETY CADASTRADAS</button>
         </div>
     </div>
     </div>

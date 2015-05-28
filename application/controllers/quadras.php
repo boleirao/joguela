@@ -6,6 +6,7 @@ class quadras extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Model_unidades');
+        $this->load->model('Model_logs');
     }
 
     public function index() {
@@ -24,6 +25,8 @@ class quadras extends CI_Controller {
         $data['main_content'] = "quadras";
 
         $chave = $this->input->post('chave');
+        
+        $this->Model_logs->inserir($chave);
 
         $itens_encontrados = $this->Model_unidades->busca($chave);
         

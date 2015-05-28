@@ -80,7 +80,7 @@ class Model_unidades extends CI_Model {
         }   
         if($limite > 0 || $inicio > 0)
             $this->db->limit($limite, $inicio);
-
+        
         $query = $this->db->get();
 
         return $query->result_array();
