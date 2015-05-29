@@ -16,7 +16,7 @@
             </div>
             
             <div class="box-footer center">
-            	Jogue Lá | Copyright &copy; <?php print date('Y'); ?> - Todos os direitos reservados
+            	Jogue Lá | Copyright &copy; 2015 - Todos os direitos reservados
             </div>
             
             <div class="box-footer right">

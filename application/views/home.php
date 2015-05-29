@@ -7,7 +7,7 @@
 
                     <div class="destaques-title">
 
-                        <h3><a href=""><?php print $destaque['unidade']; ?></a></h3>
+                        <h3><?php print $destaque['unidade']; ?></h3>
                         <p><?php print $destaque['endereco']; ?> <?php print (isset($destaque['bairro']) ? $destaque['bairro'] : '' ); ?> - <?php print $destaque['nome']; ?> - <?php print $destaque['telefone']; ?></p>
                         
                         <?php if(isset($destaque['classificacao'])) : ?>
@@ -65,7 +65,7 @@
             <?php foreach ($quadras as $quadra) : ?>
                 <div class="destaques-2">
                     <div class="destaques-title-2">
-                        <h3><a href=""><?php print $quadra['unidade']; ?></a></h3>
+                        <h3><?php print $quadra['unidade']; ?></h3>
                         <p><?php print $quadra['endereco']; ?> <?php print (isset($quadra['bairro']) ? $quadra['bairro'] : '' ); ?> - <?php print $quadra['telefone']; ?></p>                                            
                     </div>
                 </div>
