@@ -1,0 +1,191 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+body{
+	outline: 0;
+	font-size: .8em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	word-wrap: break-word;
+}
+
+body img{
+	height:auto!important;
+	max-width:100%!important;
+	border:0;
+}
+
+h1, h2, h3, h4, p{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	border:0;
+}
+
+hr{
+	height: 1px;
+	border:0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	margin: 12px 0;
+	clear: both;
+}
+
+button, input, textarea, select{
+	font-family: 'Open Sans Condensed', sans-serif;
+	border: 0;
+}
+
+.clear{ clear: both;}
+
+.left{ text-align: left;}
+
+.center{ text-align: center;}
+
+.right{ text-align: right;}
+
+/************ STYLE ************/
+
+.header{
+	min-height: 420px;
+	background: #f2f2f2;
+	/*background:url(../images/201.gif) no-repeat bottom center;
+	background-size: 100%;*/
+}
+
+#footer{
+	padding: 40px 0;
+}
+.btn {
+	border:0;
+	padding: 10px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn-yellow {
+	background-color: #ffcc00;
+	font-size: 1.2em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/************ MASONRY *************/
+
+.item {	}
+
+/************ GRIDS *************/
+
+.grid-fluid{
+	max-width: 1423px;
+	margin: 0 auto;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12{
+	padding: 10px;
+	border: 1px solid #fff;
+	background: #ccc;
+	float: left;
+}
+
+
+.grid-12{
+	width: 100%;
+}
+.grid-11 {
+	width: 91.66666667%;
+}
+.grid-10 {
+	width: 83.33333333%;
+}
+.grid-9 {
+	width: 75%;
+}
+.grid-8 {
+	width: 66.66666667%;
+}
+.grid-7 {
+	width: 58.33333333%;
+}
+.grid-6 {
+	width: 50%;
+}
+.grid-5 {
+	width: 41.66666667%;
+}
+.grid-4 {
+	width: 33.33333333%;
+}
+.grid-3 {
+	width: 25%;
+}
+.grid-2 {
+	width: 16.66666667%;
+}
+.grid-1 {
+	width: 8.33%;
+}
+
+@media (max-width: 768px) {
+	.grid-1,
+	.grid-2,
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6,
+	.grid-7,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-11,
+	.grid-12{
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #fff;
+		background: #ccc;
+		float: left;
+	}
+
+	.grid-1,
+	.grid-2,
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6,
+	.grid-7,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-11,
+	.grid-12{
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #fff;
+		background: #ccc;
+		float: left;
+	}
+}
