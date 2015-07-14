@@ -99,10 +99,19 @@ class Model_unidades extends CI_Model {
 
         return $query->result_array();
     }
-
-    function item($unidadeID = 0) {
+    
+    function ouro() {
         $this->db->from('unidades');
-        $this->db->where('unidadeID', $unidadeID);
+        $this->db->join('cidade','unidades.cidadeID = cidade.id');
+        $this->db->where('ouro', 1);
+        $query = $this->db->get();
+        return $query->row_array();
+    }
+
+    function item($url = '') {
+        $this->db->from('unidades');
+        $this->db->join('cidade','unidades.cidadeID = cidade.id');
+        $this->db->where('url', $url);
         $query = $this->db->get();
         return $query->row_array();
     }

@@ -1,145 +1,26 @@
-<div id="footer">
-        <div class="center-align">
-        
-            <div class="box-facebook left">
-               <strong>CADASTRE JÁ SUA QUADRA NO JOGUE LÁ E VEJA SEU NEGÓCIO FAZER UMA BELA DUPLA COM O SUCESSO!</strong><br /><br />
-               <div class="fb-page" data-href="https://www.facebook.com/pages/Jogue-L%C3%A1/1468542276694015?ref=hl" data-width="500" data-height="250" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Jogue-L%C3%A1/1468542276694015?ref=hl"><a href="https://www.facebook.com/pages/Jogue-L%C3%A1/1468542276694015?ref=hl">Jogue Lá</a></blockquote></div></div>
-            </div>
-                        
-            <div class="box-joguela right">
-            <img src="<?php print base_url(); ?>assets/images/logo-final-branco.png" alt="Jogue Lá"><br>
-            <strong>Jogue Lá</strong><br>
-            É uma plataforma web pra quem deseja encontrar o local ideal para a prática do futebol de forma rápida e sem complicações. Chega de correr de site em site a procura de contato ou horário disponível. Faça sua busca e agite sua galera!
-            </div>
-            <div class="box-footer left">
-            	<address>contato@joguela.com</address>
-            </div>
-            
-            <div class="box-footer center">
-            	Jogue Lá | Copyright &copy; 2015 - Todos os direitos reservados
-            </div>
-            
-            <div class="box-footer right">
-            	Fone: (19) 9 9515-9037 | www.joguela.com
-            </div>
-            
-        </div>
+<div id="footer" class="grid-12">
+    <div class="grid-fluid center">
+        <div class="grid-4 spaceBox"><address>contato@joguela.com</address></div>
+        <div class="grid-4 spaceBox">Fone: (19) 9 9515-9037 | www.joguela.com</div>
+        <div class="grid-4 spaceBox">Jogue Lá | Copyright &copy; 2015 - Todos os direitos reservados</div>
     </div>
 </div>
+</div>
 
-       
-    <script src="<?php print base_url(); ?>assets/js/jquery-1.9.1.min.js"></script> 
-    <script src="<?php print base_url(); ?>assets/js/owl.carousel.js"></script>
-    <script src="<?php print base_url(); ?>assets/js/bootstrap-collapse.js"></script>
-    <script src="<?php print base_url(); ?>assets/js/bootstrap-transition.js"></script>
-    <script src="<?php print base_url(); ?>assets/js/bootstrap-tab.js"></script>
-    
-    <script>
-    $(document).ready(function() {
-
-      var time = 5; // time in seconds
-
-      var $progressBar,
-          $bar, 
-          $elem, 
-          isPause, 
-          tick,
-          percentTime;
-
-        //Init the carousel
-        $("#owl-demo-slider").owlCarousel({
-          slideSpeed : 500,
-          paginationSpeed : 500,
-          singleItem : true,
-          afterInit : progressBar,
-          afterMove : moved,
-		  transitionStyle : "fade",
-          startDragging : pauseOnDragging
-        });
-
-        //Init progressBar where elem is $("#owl-demo")
-        function progressBar(elem){
-          $elem = elem;
-          //build progress bar elements
-          buildProgressBar();
-          //start counting
-          start();
-        }
-
-        //create div#progressBar and div#bar then prepend to $("#owl-demo")
-        function buildProgressBar(){
-          $progressBar = $("<div>",{
-            id:"progressBar"
-          });
-          $bar = $("<div>",{
-            id:"bar"
-          });
-          $progressBar.append($bar).prependTo($elem);
-        }
-
-        function start() {
-          //reset timer
-          percentTime = 0;
-          isPause = false;
-          //run interval every 0.01 second
-          tick = setInterval(interval, 10);
-        };
-
-        function interval() {
-          if(isPause === false){
-            percentTime += 1 / time;
-            $bar.css({
-               width: percentTime+"%"
-             });
-            //if percentTime is equal or greater than 100
-            if(percentTime >= 100){
-              //slide to next item 
-              $elem.trigger('owl.next')
-            }
-          }
-        }
-
-        //pause while dragging 
-        function pauseOnDragging(){
-          isPause = true;
-        }
-
-        //moved callback
-        function moved(){
-          //clear interval
-          clearTimeout(tick);
-          //start again
-          start();
-        }
-
-        //uncomment this to make pause on mouseover 
-        // $elem.on('mouseover',function(){
-        //   isPause = true;
-        // })
-        // $elem.on('mouseout',function(){
-        //   isPause = false;
-        // })
-    });
-    </script>
-    
-    <script>
-    $(document).ready(function() {
-      $("#owl-demo").owlCarousel({
-        navigation : false
-      });
-    });
-	
-	 $('.link').on('click', function(event){
-        var $this = $(this);
-        if($this.hasClass('clicked')){
-          $this.removeAttr('style').removeClass('clicked');
-        } else{
-          $this.css('background','#7fc242').addClass('clicked');
-        }
-      });
-
-    </script>
-    
-    
+<!-- SCRIPTS -->
+<script type="text/javascript" src="<?php print base_url(); ?>assets/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="<?php print base_url(); ?>assets/js/index.js"></script>
+<script type="text/javascript" src="<?php print base_url(); ?>assets/js/masonry.pkgd.js"></script>
+<script type="text/javascript" src="<?php print base_url(); ?>assets/js/chart.js"></script>
+<script>
+    var doughnutData = [{value: 90, color: "#91cb7f"}, {value: 10, color: "#d1eec8"}];
+    var doughnut2Data = [{value: 80, color: "#91cb7f"}, {value: 20, color: "#d1eec8"}];
+    var doughnut3Data = [{value: 85, color: "#91cb7f"}, {value: 15, color: "#d1eec8"}]
+    var doughnut4Data = [{value: 70, color: "#91cb7f"}, {value: 30, color: "#d1eec8"}]
+    new Chart(document.getElementById("doughnut").getContext("2d")).Doughnut(doughnutData);
+    new Chart(document.getElementById("doughnut2").getContext("2d")).Doughnut(doughnut2Data);
+    new Chart(document.getElementById("doughnut3").getContext("2d")).Doughnut(doughnut3Data);
+    new Chart(document.getElementById("doughnut4").getContext("2d")).Doughnut(doughnut4Data);
+</script>
 </body>
 </html>

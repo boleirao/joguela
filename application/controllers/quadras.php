@@ -9,19 +9,15 @@ class quadras extends CI_Controller {
         $this->load->model('Model_logs');
     }
 
-    public function index() {
-        $data['title'] = "Jogue Lá - Encontrar o local e agendar seu futebol nunca foi tão fácil!";
-        $data['main_content'] = "quadras";
+    public function lista($cidade  = '', $url = '') {
+        $data['main_content'] = "quadra";
         
-        $data['destaques'] = $this->Model_unidades->lista(array('destaque' => 1), array(), 6);
-        
-        $data['quadras'] = $this->Model_unidades->lista(array('destaque' => 0));
+        $data['quadra'] = $this->Model_unidades->item($url);
         
         $this->load->view('template/default', $data);
     }
     
     public function busca() {
-        $data['title'] = "Jogue Lá - Encontrar o local e agendar seu futebol nunca foi tão fácil!";
         $data['main_content'] = "quadras";
 
         $chave = $this->input->post('chave');

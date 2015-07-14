@@ -46,9 +46,9 @@ class Model_blog extends CI_Model {
         return $query->result_array();
     }
 
-    function item($blogID = 0) {
+    function item($url = '') {
         $this->db->from('blog');
-        $this->db->where('blogID', $blogID);
+        $this->db->where('url', $url);
         $query = $this->db->get();
         return $query->row_array();
     }

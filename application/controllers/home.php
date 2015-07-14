@@ -9,12 +9,13 @@ class home extends CI_Controller {
     }
 
     public function index() {
-        $data['title'] = "Jogue Lá - Encontrar o local e agendar seu futebol nunca foi tão fácil!";
         $data['main_content'] = "home";
         
-        $data['destaques'] = $this->Model_unidades->lista(array('destaque' => 1), array(), 6);
+        $data['ouro'] = $this->Model_unidades->ouro();
         
-        $data['quadras'] = $this->Model_unidades->lista(array('destaque' => 0), array(), 12);
+        $data['destaques'] = $this->Model_unidades->lista(array('destaque' => 1, 'ouro' => 0), array(), 12);
+        
+        $data['quadras'] = $this->Model_unidades->lista(array('destaque' => 0, 'ouro' => 0), array(), 24);
         
         $this->load->view('template/default', $data);
     }

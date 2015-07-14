@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Jogue Lá - Encontrar o local e agendar seu futebol nunca foi tão fácil!</title>
 <meta NAME="DESCRIPTION" CONTENT="Quer encontrar quadras society de forma rápida e sem complicação? Chega de correr de site em site a procura de contato ou horário disponível.">
 <meta NAME="ABSTRACT" CONTENT="Encontrar o local e agendar seu futebol nunca foi tão fácil!">
@@ -12,17 +11,21 @@
 <meta NAME="RATING" CONTENT="general">
 <meta NAME="DISTRIBUTION" CONTENT="global">
 <meta NAME="LANGUAGE" CONTENT="PT">
-<link rel="stylesheet" href="<?php print base_url(); ?>assets/css/style.css" type="text/css" />
-<!-- Owl Carousel Assets -->
-<link href="<?php print base_url(); ?>assets/css/owl.carousel.css" rel="stylesheet">
-<link href="<?php print base_url(); ?>assets/css/owl.theme.css" rel="stylesheet">
-<link rel="shortcut icon" href="<?php print base_url(); ?>assets/images/favicon.jpg" type="image/x-icon"/>
-<script src="<?php print base_url(); ?>assets/js/modernizr.custom.js"></script>
+<link href="<?php print base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css"/>
+<!-- MENU RESPONSIVO -->
+<link href="<?php print base_url(); ?>assets/css/menu.css" rel="stylesheet" type="text/css"/>
+<link href="<?php print base_url(); ?>assets/css/responsive-nav.css" rel="stylesheet" type="text/css"/>
+<!-- ÍCONES -->
+<link href="<?php print base_url(); ?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<!-- ANIMAÇÕES -->
+<link href="<?php print base_url(); ?>assets/css/animate.css" rel="stylesheet" type="text/css"  />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+<link href="<?php print base_url(); ?>assets/images/favicon.jpg" rel="shortcut icon" type="image/x-icon" />
+<style>canvas{}</style>
+<!-- SCRIPTS -->
 
-<script type="text/javascript" src="<?php print base_url(); ?>assets/js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="<?php print base_url(); ?>assets/js/responsivemobilemenu.js"></script>
 </head>
-
 <body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -45,39 +48,60 @@
 }(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="main">
-	<div id="header">
-    
-        <div id="nav">
-           <nav class="rmm">
-                 <ul>
-                    <li><a href="<?php print base_url(); ?>home">Home</a></li>
-                    <li><a href="<?php print base_url(); ?>como-funciona">Como Funciona</a></li>
-                    <li><a href="<?php print base_url(); ?>cadastre-seu-local">Cadastre seu Local</a></li>
-                    <li><a href="<?php print base_url(); ?>blog">Blog</a></li>
-                </ul>
-            </nav>
-        </div>
-                        
-        <div class="center-align">
-			<div id="logo">
-            	<h1><a href="<?php print base_url(); ?>home"><img src="<?php print base_url(); ?>assets/images/logo-final-branco.png" alt="Jogue Lá"></a></h1>
+    <div class="header">
+            <input class="menu" type="checkbox" name="btn" id="controler">
+        <label for="controler" class="transition"><i class="fa fa-bars"></i></label>
+        <nav class="nav transition">
+                    <a href="<?php print base_url(); ?>home" class="transition">Home</a>
+                    <a href="<?php print base_url(); ?>blog" class="transition">Blog</a>
+                    <a href="<?php print base_url(); ?>como-funciona" class="transition">Como Funciona</a>
+                    <a href="<?php print base_url(); ?>cadastre-sua-quadra" class="transition">Cadastre sua Quadra</a>
+                    <a href="<?php print base_url(); ?>contato" class="transition">Contato</a>
+        </nav>
+            <div class="topo grid-12 grayscale">
+                    <div class="grid-4">
+                            <div class="grid-12">
+                        <figure class="effect-animation">
+                            <img src="<?php print base_url(); ?>assets/images/imagem-800-800.jpg">
+                                            <figcaption>
+                            <h2>CATEGORIA</h2>
+                                            <p>Mussum ipsum cacilds, vidis litro abertis</p>
+                                            </figcaption>
+                        </figure>
+                            </div>
+                    </div>
+                    <div class="grid-4">
+                            <div class="grid-12">
+                            <img src="<?php print base_url(); ?>assets/images/imagem-800-400.jpg">
+                            </div>
+                            <div class="grid-12">
+                        <figure class="effect-animation">
+                            <img src="<?php print base_url(); ?>assets/images/imagem-800-400.jpg">
+                                            <figcaption>
+                            <h2>CATEGORIA</h2>
+                                            <p>Mussum ipsum cacilds, vidis litro abertis</p>
+                                            </figcaption>
+                        </figure>
+                            </div>
+                    </div>
+                    <div class="grid-4">
+                <figure class="effect-animation">
+                    <img src="<?php print base_url(); ?>assets/images/imagem-800-800.jpg">
+                                    <figcaption>
+                    <h2>CATEGORIA</h2>
+                                    <p>Mussum ipsum cacilds, vidis litro abertis</p>
+                                    </figcaption>
+                </figure>
+                    </div>
             </div>
-        </div>
-    	<div id="topo-chamada">
-        	<div class="chamada-home"><h1>Encontrar o local e agendar seu futebol nunca foi tão fácil!</h1></div>
-            <div id="top-search">
-            	<div class="filtro">       
-                    <form method="POST" action="<?php print base_url(); ?>quadras/busca">
-                        <div class="campo-1">
-                            <input name="chave" type="text" onblur="javascript: $(this).attr('placeholder', 'Encontre o local ideal por CIDADE ou NOME');" onclick="javascript: $(this).attr('placeholder', '');" placeholder="Encontre o local ideal por CIDADE ou NOME" required>
-                        </div>
 
-                        <div class="campo-3">
-                            <button type="submit" class="button btgreen">ENCONTRAR</button>
-                        </div>
+            <div id="filtro" class="grid-12 filtro center">
+            <h1>Encontrar o local e agendar seu futebol nunca foi tão fácil!</h1>
+                    <form method="POST" action="<?php print base_url(); ?>quadras/busca">
+                            <label for="search"></label>
+                            <input type="search" name="chave" class="formInput search" id="search" placeholder="Busque por Nome, Bairro ou Cidade" required>
+                            <button type="submit" class="btn btn-white-2"><i class="fa fa-search"></i> BUSCAR</button><br>
+                            <p><a href="<?php print base_url(); ?>contato">Não encontrou o local que procurava? Entre em contato com o Jogue Lá!</a></p>
                     </form>
-                </div>
-                </div>
             </div>
-        </div>
     </div>

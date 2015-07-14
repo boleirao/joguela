@@ -9,7 +9,6 @@ class blog extends CI_Controller {
     }
 
     public function index() {
-        $data['title'] = "Jogue Lá - Encontrar o local e agendar seu futebol nunca foi tão fácil!";
         $data['main_content'] = "blog";
         
         $data['posts'] = $this->Model_blog->lista(12);
@@ -17,11 +16,10 @@ class blog extends CI_Controller {
        $this->load->view('template/default', $data);
     }
     
-    public function post($url = '', $blogID = 0) {
-        $data['title'] = "Jogue Lá - Encontrar o local e agendar seu futebol nunca foi tão fácil!";
+    public function post($url = '') {
         $data['main_content'] = "post";
         
-        $data['post'] = $this->Model_blog->item($blogID);
+        $data['post'] = $this->Model_blog->item($url);
         
         $this->load->view('template/default', $data);
     }
