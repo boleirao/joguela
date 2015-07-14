@@ -92,6 +92,8 @@ class Model_unidades extends CI_Model {
         
         if(isset($chave)){
             $this->db->like('unidade', $chave);
+            $this->db->or_like('endereco', $chave);
+            $this->db->or_like('bairro', $chave);
             $this->db->or_like('nome', $chave);
         }
         
