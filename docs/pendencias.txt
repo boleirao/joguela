@@ -1,0 +1,45 @@
+Home
+
+- Logo
+- Padronizar Estrela das quadras igual à do destaque
+- Definir o que vai ser feito nos espaços (800x400)
+- Arrumar um espaço para o box curtir do facebook, a versão de produção já tem esse box.
+- Criar uma imagem padrão, para as quadras destaques que não tem imagem, algo como "Sem Fotos".
+- Arrumar um espaço para o texto curto de explicação "É uma plataforma web pra quem deseja encontrar o local ideal para a prática do futebol de forma rápida e sem complicações. Chega de correr de site em site a procura de contato ou horário disponível. Faça sua busca e agite sua galera!" Ou então podemos modificar esse texto, pensando até em SEO, inserindo palavras chaves nele e ao mesmo tempo explicando o que o sistema faz.
+- No espaço para anunciante gold, deixar 'escondido' via css a exibição da imagem, caso a quadra não possua vídeo, depois eu ajusto essa regra por PHP.
+
+- DUVIDA: Acha que o rodapé ficou estranho? Tem como melhorar? Acha que ficou muito vazio?
+- DUVIDA: O responsivo tá bala? Chegou a testar em algum celular?
+- DUVIDA: Utilizei os icones da versão antiga, tudo bem?!
+- DUVIDA: Será que o menu, por default fechado (padrão mobile) não pode confundir o usuário? Será que ele poderia vir por padrão 'aberto' ou então que existissem dois menus (mobile e desktop).
+
+
+Blog
+- Fiz a página de blog que você tinha esquecido, basicamente ela lista todos os post, acho que não tem nada além disso.
+- Estilizar a página interna do post, eu fiz mas falta css.
+
+Como Funciona
+
+- A página está pronta, porém sem contéudo, fazer o vídeo e/ou texto de contéudo da página.
+
+Cadastre sua Quadra
+
+- O form ainda não está funcionando, preciso de alguns campos antes de fazer funcionar:
+  Checkbox (lanchonete, estacionamento, vestiarios, churrasqueira, escolinha, tv, academia, wifi)
+
+- Acho que falta uma imagem e/ou texto ao lado do form, ficou um vazio estranho.
+
+- Deixar pronta, uma div com a mensagem de cadastro efetuado com sucesso, depois eu escondo e exibo ela com PHP.
+
+Contato
+
+- Acho que falta uma imagem e/ou texto ao lado do form, ficou um vazio estranho.
+
+- Deixar pronta, uma div com a mensagem de cadastro efetuado com sucesso, depois eu escondo e exibo ela com PHP.
+
+Página Interna da Quadra
+
+- Criar um espaço para exibir a foto (s) da quadra.
+- Criar uma imagem padrão, para as quadras que não tem imagem, algo como "Sem Fotos".
+- Estilizar melhor o CSS, criei a página, mas acho que ficou muito 'vazia e morta'.
+- OBSERVAÇÃO: Acho que o SEO ficou bom!! Ex: joguela.com/quadras-society/campinas/chute-inicial-corinthians-centro
